@@ -166,11 +166,7 @@ document.getElementById('send-btn').addEventListener('click', function () {
   var email = document.getElementById('f-email').value || '';
   var message = document.getElementById('f-message').value || '';
   var subject = 'AULGOOD 문의' + (company ? ' - ' + company : '');
-  var body = '회사명: ' + company + '
-담당자 이메일: ' + email + '
-
-문의 내용:
-' + message;
+  var body = '회사명: ' + company + '\n담당자 이메일: ' + email + '\n\n문의 내용:\n' + message;
   window.location.href = 'mailto:aulgoodkorea@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 });
 </script>
